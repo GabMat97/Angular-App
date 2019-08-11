@@ -16,7 +16,7 @@ export class HomesComponent implements OnInit {
     this.bodyElements$ = of([
       {
         title:'one',
-        img:'one',
+        img:'www.google.com',
         content:'one',
       },
       {

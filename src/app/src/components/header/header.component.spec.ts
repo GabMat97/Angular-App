@@ -34,4 +34,7 @@ describe('HeaderComponent', () => {
   it('search has placeholder', () => {
     expect(fixture.nativeElement.querySelector('[data-test="search"]').getAttribute('placeholder')).toBe('search');
   });
+  it('should have 4 links ', () => {
+    expect(fixture.nativeElement.querySelectorAll('[data-test="links"]').length).toBe(4);
+  });
 });

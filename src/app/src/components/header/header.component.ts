@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { of } from 'rxjs'
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  links$;
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.links$ = of([
+      {
+        text: 'test1',
+        link: 'yikes',
+      },
+      {
+        text: 'test2',
+        link: 'lel',
+      },
+      {
+        text: 'test3',
+        link: 'da',
+      },
+      {
+        text: 'test4',
+        link: 'bri',
+      },
+    ])
   }
 
 }

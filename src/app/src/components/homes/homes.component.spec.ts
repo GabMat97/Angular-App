@@ -27,6 +27,8 @@ describe('HomesComponent', () => {
     expect(fixture.nativeElement.querySelectorAll('[data-test="bodyElement"]').length).toBe(4);
   });
 
-  
+  it('should add home title', () => {
+    expect(fixture.nativeElement.querySelector('[data-test="bodyElement"]').innerText).toBe('one');
+  });
 
 });
